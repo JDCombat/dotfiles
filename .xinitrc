@@ -1,7 +1,9 @@
-exec xcompmgr &
-feh --no-fehbg --bg-scale '/home/Bartek/Downloads/wallpaperflare.com_wallpaper.jpg'
+exec picom --experimental-backend &
+~/.fehbg
 slstatus &
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources &
+
+xset b off &
 
 exec dwm 
